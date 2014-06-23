@@ -1,6 +1,9 @@
 source 'https://rubygems.org'
 
 
+# Use Hydra application framework
+gem 'hydra'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
@@ -44,4 +47,11 @@ group :test, :development do
    gem 'pry-byebug'
    gem 'pry-stack_explorer'
    gem 'binding_of_caller'
+end
+
+gem "devise"
+gem "devise-guests", "~> 0.3"
+group :development, :test do
+  gem "rspec-rails"
+  gem "jettywrapper"
 end
